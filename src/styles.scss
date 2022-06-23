@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary:#1b27cf;
+  --secondary: #132A13;
+  --tertiary: rgb(172, 20, 20);
+  --quaternary:rgb(63, 172, 20);
+  --quinary:rgb(142, 20, 172);
+  --danger:rgb(247, 243, 15);
+  --padding:15px;
+  --cinza: #405040;
+  --cinza-claro: #dedede;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: rgb(55, 7, 226);
+}
+
+

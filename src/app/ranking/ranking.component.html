@@ -1,0 +1,25 @@
+<section class="container">
+  <div>
+    <h2 class="titulo">Pontuação</h2>
+  </div>
+  <div ite>
+    <button class="botao" (click)="botaoHome()">Voltar</button>
+  </div>
+  <table class="tabela">
+    <thead class="tabela__cabecalho">
+      <th class="tabela__cabecalho__conteudo">Nome</th>
+      <th class="tabela__cabecalho__conteudo">Pontuação</th>
+      <th class="tabela__cabecalho__conteudo">Data</th>
+    </thead>
+    <tbody *ngIf="ranking?.length > 0; else listaVazia" >
+      <tr class="tabela__linha" *ngFor="let item of ranking">
+        <td class="tabela__conteudo">{{item?.playerName}}</td>
+        <td class="tabela__conteudo">{{item?.score}}</td>
+        <td class="tabela__conteudo">{{item?.data | date:'short'}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ng-template #listaVazia>
+    <p>Sem Registros</p>
+  </ng-template>
+</section>

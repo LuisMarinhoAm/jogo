@@ -1,0 +1,56 @@
+.container {
+  max-width: 600px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.bloco-texto{
+  margin-bottom: 20px;
+}
+
+.subtitulo{
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.bloco-topico{
+  margin-bottom: 8px;
+}
+
+.topico{
+  font-size: 16px;
+}
+
+.subtopico{
+  text-align: justify;
+  margin-left: 23px;
+}
+
+.paragrafo {
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 5px;
+}
+
+.botao-wrapper {
+  display: flex;
+}
+
+.botao {
+  background-color: #1535c4;
+  color: white;
+  flex: 1;
+  border: 50px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 0.5em;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin: 0 0 10px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+

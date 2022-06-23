@@ -1,0 +1,26 @@
+.container {
+  max-width: 300px;
+  padding: 60px;
+  margin: 0 auto;
+}
+
+.botao-wrapper {
+  display: flex;
+}
+
+.botao {
+  background-color: #1535c4;
+  color: white;
+  flex: 1;
+  border: 50px;
+  border-radius: 20px;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  margin: 0 0 10px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}

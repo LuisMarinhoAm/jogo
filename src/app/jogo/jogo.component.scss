@@ -1,0 +1,179 @@
+.container {
+  max-width: 900px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.npc-enemy {
+  text-align: center;
+  width: 50%;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 5px 50px;
+  box-sizing: border-box;
+  font-size: 24px;
+}
+
+.nome-titulos {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: rgb(105, 101, 101);
+}
+
+.borda{
+  border: 1px solid grey;
+  width: 100%;
+  position: relative;
+}
+
+.text-bar {
+  color: white;
+  z-index: 2;
+  position: relative;
+  text-shadow: 1px 1px 2px #525050;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 5px;
+}
+
+.life-bar {
+  background-color: #00eb00;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 1;
+  &.media {
+    background-color: rgb(255, 255, 0);
+  }
+  &.baixa {
+    background-color: red;
+  }
+}
+
+.wrapper {
+  display: flex;
+  margin-bottom: 24px;
+}
+
+.botao {
+  text-align: center;
+  width: 50%;
+  vertical-align: top;
+  margin: 0 24px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: white;
+  border: 1px solid grey;
+  font-weight: bold;
+  cursor: pointer;
+
+  &.azul {
+    background-color: #0a39d6;
+  }
+
+  &.verde {
+    background-color: #1ba71b;
+  }
+
+  &.vermelho {
+    background-color: #c90808;
+  }
+  &.vermelho-claro {
+    background-color: rgb(233, 141, 141);
+  }
+
+  &.roxo {
+    background-color: #a60db4;
+  }
+}
+
+.log-bar {
+  width: 100%;
+  vertical-align: top;
+  font-weight: bold;
+  margin-top: 8px;
+  padding: 5px 5px;
+  box-sizing: border-box;
+  font-size: 18px;
+  color: white;
+  border: 1px solid rgb(143, 142, 142);
+
+  &.azul-claro {
+    background-color: #6575aa;
+  }
+
+  &.vermelho-claro {
+    background-color: #d68888;
+  }
+
+  &.verde-claro {
+    background-color: #6bcc76;
+  }
+
+  &.amarelo-claro {
+    background-color: #c7c77f;
+  }
+
+  &.jogador{
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  &.inimigo{
+    text-align: right;
+    padding-right: 40px;
+  }
+}
+
+.tela-fundo-fim {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  color: white;
+  z-index: 3;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.tela-fim {
+  text-align: center;
+
+  &.frase{
+    font-size: 24px;
+    margin-bottom: 18px;
+  }
+
+  &.inserir-nome {
+    font-size: 18px;
+    width: 100%;
+    padding: 8px 12px;
+    margin-bottom: 5px;
+  }
+
+  &.botao-inserir {
+    background-color: #1535c4;
+    color: white;
+    flex: 1;
+    border: 50px;
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 0.5em;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin: 0 0 10px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+

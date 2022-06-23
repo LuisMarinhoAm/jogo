@@ -1,0 +1,55 @@
+<section class="container">
+  <div class="wrapper">
+    <div class="npc-enemy">
+      <div class="nome-titulos">{{player.nome}}</div>
+      <div class="borda">
+        <span class="text-bar">{{(player.vida / 100) | percent}}</span>
+        <div [ngClass]="{'life-bar': true, 'media': player.vida < 50 && player.vida >= 20, 'baixa': player.vida < 20}" [ngStyle]="{'width':player.vida + '%'}"></div>
+      </div>
+    </div>
+    <div class="npc-enemy">
+      <div class="nome-titulos">{{npc.nome}}</div>
+      <div class="borda">
+        <span class="text-bar">{{(npc.vida / 100) | percent}}</span>
+        <div [ngClass]="{'life-bar': true, 'media': npc.vida < 50 && npc.vida >= 20, 'baixa': npc.vida < 20}" [ngStyle]="{'width': npc.vida + '%'}"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nome-titulos">Comandos</div>
+  <div class="wrapper">
+    <button class="botao azul" type="button" (click)="Ataque()">Ataque</button>
+    <button [ngClass]="{'botao': true, 'vermelho': checkEspecial() == false, 'vermelho-claro': checkEspecial()}"
+            type="button" (click)="Especial()" [disabled]="checkEspecial()">Ataque Especial</button>
+    <button class="botao verde" type="button" (click)="Curar()">Curar</button>
+    <button class="botao roxo" type="button" (click)="Voltar()">Desistir</button>
+  </div>
+
+  <div class="tela-fundo-fim" *ngIf="jogoEmAndamento == false">
+    <div class="tela-fim" *ngIf="score != 0">
+        <p class="tela-fim frase">Paraboooins {{nomeVencedor}}! Você fez {{score}} pontos.</p>
+      <div>
+        <input class="tela-fim inserir-nome" type="text" [(ngModel)]="playerName" name="playerName" placeholder="Coloque seu nome">
+        <button [ngClass]="{'tela-fim botao-inserir': true, 'inativo': checkName() , 'ativo': !checkName()}"
+                type="submit" (click)="RegRanking()" [disabled]="checkName()">Inserir</button>
+      </div>
+    </div>
+    <div class="tela-fim" *ngIf="score == 0">
+      <p class="tela-fim frase">Não foi dessa vêz. Mais sorte na próxima</p>
+      <div>
+         <button class="tela-fim botao-inserir" type="submit" (click)="Voltar()">Voltar</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="nome-titulos">Log</div>
+  <div *ngIf="log?.length > 0; else logVazio">
+    <div *ngFor="let linha of log">
+      <div [ngClass]="buscaCorLog(linha)">{{linha.texto}}</div>
+    </div>
+  </div>
+
+  <ng-template #logVazio></ng-template>
+
+</section>

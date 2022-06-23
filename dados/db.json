@@ -1,0 +1,118 @@
+{
+  "ranking": [
+    {
+      "playerName": "Luis",
+      "score": 778,
+      "data": "2022-06-22T22:16:04.137Z",
+      "id": 1
+    },
+    {
+      "playerName": "Roberta",
+      "score": 2000,
+      "data": "2022-06-22T22:17:55.436Z",
+      "id": 2
+    },
+    {
+      "playerName": "Gabriel",
+      "score": 600,
+      "data": "2022-06-22T22:42:21.585Z",
+      "id": 3
+    },
+    {
+      "playerName": "Roberta",
+      "score": 4375,
+      "data": "2022-06-22T22:44:15.956Z",
+      "id": 4
+    },
+    {
+      "playerName": "Guilherme",
+      "score": 3778,
+      "data": "2022-06-22T22:47:44.329Z",
+      "id": 5
+    },
+    {
+      "playerName": "Juvenal",
+      "score": 2400,
+      "data": "2022-06-22T22:59:58.277Z",
+      "id": 6
+    },
+    {
+      "playerName": "Luis",
+      "score": 0,
+      "data": "2022-06-23T04:19:29.292Z",
+      "id": 7
+    },
+    {
+      "playerName": "Roberval",
+      "score": 3556,
+      "data": "2022-06-23T05:00:34.032Z",
+      "id": 8
+    },
+    {
+      "playerName": "Seu Nome",
+      "score": 4000,
+      "data": "2022-06-23T05:03:35.806Z",
+      "id": 9
+    },
+    {
+      "playerName": "Mizeravi...",
+      "score": 1800,
+      "data": "2022-06-23T05:13:02.318Z",
+      "id": 10
+    },
+    {
+      "playerName": "Trizal",
+      "score": 2100,
+      "data": "2022-06-23T05:27:40.881Z",
+      "id": 11
+    },
+    {
+      "playerName": "Vladimir",
+      "score": 2400,
+      "data": "2022-06-23T05:31:38.235Z",
+      "id": 12
+    },
+    {
+      "playerName": "Jandira",
+      "score": 3400,
+      "data": "2022-06-23T18:55:24.593Z",
+      "id": 13
+    },
+    {
+      "playerName": "Darcy",
+      "score": 3778,
+      "data": "2022-06-23T19:04:36.896Z",
+      "id": 14
+    },
+    {
+      "playerName": "Roberta",
+      "score": 1333,
+      "data": "2022-06-23T19:28:41.601Z",
+      "id": 15
+    },
+    {
+      "playerName": "Rasputia",
+      "score": 3200,
+      "data": "2022-06-23T19:33:49.992Z",
+      "id": 16
+    },
+    {
+      "playerName": "dada",
+      "score": 4556,
+      "data": "2022-06-23T19:40:17.610Z",
+      "id": 17
+    },
+    {
+      "playerName": "Jamilson",
+      "score": 273,
+      "data": "2022-06-23T20:40:57.470Z",
+      "id": 18
+    },
+    {
+      "playerName": "Randall",
+      "score": 3889,
+      "data": "2022-06-23T20:57:56.040Z",
+      "id": 19
+    }
+  ]
+}
