@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RegrasComponent } from './regras2.component';
+import { RegrasComponent } from './regras.component';
 
 describe('RegrasComponent', () => {
   let component: RegrasComponent;

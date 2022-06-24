@@ -1,7 +1,8 @@
+//Componente da home. Transformado em menu inicial
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { RankingService } from '../services/ranking.service';
-//import { NavHeader } from '../navhead/navhead.component';
 
 @Component({
   selector: 'app-home',

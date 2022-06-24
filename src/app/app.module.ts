@@ -1,3 +1,5 @@
+// Basicamente declara as rotas, modulos e componentes do app
+
 import { BrowserModule } from '@angular/platform-browser';
 import { DEFAULT_CURRENCY_CODE, LOCALE_ID, NgModule } from '@angular/core';
 

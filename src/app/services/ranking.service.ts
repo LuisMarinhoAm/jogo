@@ -1,3 +1,5 @@
+// serviço de rank para a API
+
 import { Injectable } from "@angular/core";
 import { Ranking } from "../models/ranking.models";
 import { Observable } from "rxjs";

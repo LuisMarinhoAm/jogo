@@ -1,4 +1,7 @@
+<!-- Html do jogo em si. Aqui que a mágica aparece -->
+
 <section class="container">
+<!-- div da tela inicial do jogo -->
   <div class="wrapper">
     <div class="npc-enemy">
       <div class="nome-titulos">{{player.nome}}</div>
@@ -25,7 +28,9 @@
     <button class="botao roxo" type="button" (click)="Voltar()">Desistir</button>
   </div>
 
+  <!-- div da tela de fim de jogo. Está oculta -->
   <div class="tela-fundo-fim" *ngIf="jogoEmAndamento == false">
+    <!-- Tela caso vencedor -->
     <div class="tela-fim" *ngIf="score != 0">
         <p class="tela-fim frase">Paraboooins {{nomeVencedor}}! Você fez {{score}} pontos.</p>
       <div>
@@ -34,6 +39,7 @@
                 type="submit" (click)="RegRanking()" [disabled]="checkName()">Inserir</button>
       </div>
     </div>
+    <!-- Tela caso perdedor -->
     <div class="tela-fim" *ngIf="score == 0">
       <p class="tela-fim frase">Não foi dessa vêz. Mais sorte na próxima</p>
       <div>

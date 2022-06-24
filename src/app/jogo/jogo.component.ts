@@ -1,3 +1,5 @@
+//Código do jogo. Aqui a mágica acontece ...
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { LogAcoes } from '../models/acoes.models';
